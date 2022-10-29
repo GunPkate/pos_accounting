@@ -125,7 +125,7 @@ namespace POSAccount.Forms
                     }
                 }
 
-                string updatequery = string.Format("Update Customer set CustomerName = '{0}', ContactNo= '{1}', Address= '{2}', Email= '{3}', ' where CustomerID = '{4}' ",
+                string updatequery = string.Format("Update Customer set CustomerName = '{0}', ContactNo= '{1}', Address= '{2}', Email= '{3}'  where CustomerID = '{4}' ",
                     txtCustomer.Text.Trim(), txtContact.Text.Trim(), txtAddress.Text.Trim(), txtEmail.Text.Trim(),  dgvCustomer.Rows[dgvCustomer.SelectedRows[0].Index].Cells[0].Value);
                 bool result = Databaselayer.Insert(updatequery);
                 if (result == true)
