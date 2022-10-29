@@ -17,7 +17,7 @@ namespace POSAccount
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormStock());
+            Application.Run(new FormSupplier());
         }
     }
 }
